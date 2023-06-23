@@ -1,0 +1,22 @@
+.body{
+    padding: 30px;
+    .title{
+        text-align:left;
+        color: #fff;
+        text-shadow: 0 0 20px #fff;
+    }
+    .horo{
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+    .Icon{
+        height: 18rem;
+        width: 11rem;
+    }
+}
