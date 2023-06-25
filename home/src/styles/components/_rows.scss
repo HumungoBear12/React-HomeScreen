@@ -16,7 +16,12 @@
         justify-content:flex-start;
     }
     .Icon{
-        height: 18rem;
-        width: 11rem;
+        height: 20rem;
+        width: 13rem;
+        margin-left: 15px;
+    }
+    .Icon:hover{
+        opacity:.9;
+        box-shadow: rgba(116, 116, 116, 0.56) 10px 22px 70px 4px;
     }
 }

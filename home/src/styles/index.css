@@ -228,7 +228,14 @@ body {
 }
 
 .body .Icon {
-  height: 18rem;
-  width: 11rem;
+  height: 20rem;
+  width: 13rem;
+  margin-left: 15px;
+}
+
+.body .Icon:hover {
+  opacity: .9;
+  -webkit-box-shadow: rgba(116, 116, 116, 0.56) 10px 22px 70px 4px;
+          box-shadow: rgba(116, 116, 116, 0.56) 10px 22px 70px 4px;
 }
 /*# sourceMappingURL=index.css.map */
