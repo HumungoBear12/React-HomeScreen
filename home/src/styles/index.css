@@ -23,15 +23,13 @@ summary {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img,
@@ -53,7 +51,6 @@ blockquote,
 q {
   quotes: none;
 }
-
 blockquote::before, blockquote::after,
 q::before,
 q::after {
@@ -102,19 +99,19 @@ pre {
   word-wrap: break-word;
 }
 
-input [type="radio"] {
+input [type=radio] {
   vertical-align: text-bottom;
 }
 
-input [type="checkbox"] {
+input [type=checkbox] {
   vertical-align: bottom;
 }
 
-.ie7 input [type="checkbox"] {
+.ie7 input [type=checkbox] {
   vertical-align: baseline;
 }
 
-.ie6 input[type="checkbox"] {
+.ie6 input[type=checkbox] {
   vertical-align: text-bottom;
 }
 
@@ -149,15 +146,15 @@ sub {
 
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type=button],
+input[type=submit],
+input[type=file],
 button {
   cursor: pointer;
 }
 
 button,
-input[type="button"] {
+input[type=button] {
   width: auto;
   overflow: hidden;
 }
@@ -183,7 +180,7 @@ input[type="button"] {
 /* lightest grey - used for outlines */
 /* Other Colors used */
 body {
-  background-color: #272727;
+  background-color: rgb(39, 39, 39);
   overflow-x: hidden;
 }
 
@@ -200,42 +197,36 @@ body {
 .body {
   padding: 30px;
 }
-
 .body .title {
   text-align: left;
   color: #fff;
   text-shadow: 0 0 20px #fff;
 }
-
 .body .horo {
   height: 12px;
   border: 0;
-  -webkit-box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
-
 .body .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-
 .body .Icon {
-  height: 20rem;
-  width: 13rem;
+  height: 18rem;
+  width: 14rem;
   margin-left: 15px;
+  -webkit-mask-image: linear-gradient(45deg, #ffffff 25%, rgba(255, 255, 255, 0.2) 50%, #ffffff 75%);
+  mask-image: linear-gradient(45deg, #ffffff 25%, rgba(255, 255, 255, 0.2) 50%, #ffffff 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-
 .body .Icon:hover {
-  opacity: .9;
-  -webkit-box-shadow: rgba(116, 116, 116, 0.56) 10px 22px 70px 4px;
-          box-shadow: rgba(116, 116, 116, 0.56) 10px 22px 70px 4px;
-}
-/*# sourceMappingURL=index.css.map */
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */
